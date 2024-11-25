@@ -1,0 +1,9 @@
+@import '../styles.scss'; 
+
+@media (prefers-color-scheme: $dark-mode) {
+    .section-pricipal {
+        color: white;
+        background: black;
+    }
+
+}

@@ -7,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'angular-practice-FE';
+  title = ' Hola Mundo-angular-practice-FE';
+  counter  = 10;
+
+  incrementBy(value: number):void{
+    this.counter = this.counter + value;
+  }
+
 }
