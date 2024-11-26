@@ -1,0 +1,33 @@
+<hr>
+
+<h1 class="my-4 hero">Hero Component</h1>
+
+<dl>
+    <td>Nombre:</td>
+    <dd>{{name | titlecase }}</dd>
+
+    <td>Edad:</td>
+    <dd>{{age}}</dd>
+
+    <td>Metodo:</td>
+    <dd>{{getHeroDescription()}}</dd>
+
+    <td>Capitalizado:</td>
+    <dd>{{ capitalizeName }}</dd>
+</dl>
+
+<section class="mx-2 my-3">
+    <button *ngIf="name !== 'ironman' " (click)="changeHero()" class="btn btn-info ">
+        Cambiar Nombre
+    </button>
+    
+    <button (click)="changeAge()" class="btn btn-success ms-2">
+        Cambiar Edad
+    </button>
+
+    <br>
+
+    <button (click)="resetForm()" class="btn btn-success m-2">
+        Revertir valores
+    </button>
+</section>

@@ -8,10 +8,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = ' Hola Mundo-angular-practice-FE';
-  counter  = 10;
-
-  incrementBy(value: number):void{
-    this.counter = this.counter + value;
-  }
-
 }
+  
